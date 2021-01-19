@@ -1,0 +1,129 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+.site__wrapper {
+  max-width: 960px;
+  margin: 0 auto; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 19px;
+  margin-top: 24px;
+  border-bottom: 1px solid #6e6e6e; }
+
+.header__block1,
+.header__block2,
+.header__block3 {
+  height: 108px;
+  background-color: #777; }
+
+.header__block1 {
+  width: 122px; }
+
+.header__block2 {
+  width: 279px; }
+
+.header__block3 {
+  width: 513px; }
+
+.main {
+  display: flex;
+  padding-bottom: 25px;
+  margin-top: 22px;
+  border-bottom: 1px solid #686868; }
+
+.main__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 10px; }
+
+.main__block4,
+.main__block7 {
+  width: 184px;
+  background-color: #777; }
+
+.main__block4 {
+  height: 335px; }
+
+.main__block7 {
+  height: 132px; }
+
+.main__right {
+  width: 766px; }
+
+.main__block5,
+.main__block6,
+.main__block8,
+.main__block9 {
+  background-color: #dcdcdc; }
+
+.main__block5 {
+  width: calc(100% - 10px);
+  height: 209px;
+  margin-bottom: 20px;
+  margin-left: 10px; }
+
+.main__blocks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start; }
+
+.main__block6 {
+  order: 0;
+  flex: 0 1 135px;
+  height: 153px;
+  margin: 10px; }
+
+.main__block6:nth-child(5) {
+  margin-right: 0; }
+
+.main__block6:nth-child(10) {
+  margin-right: 0; }
+
+.main__blocks:last-child {
+  margin-left: 10px;
+  margin-top: 10px; }
+
+.main__block8, .main__block9 {
+  width: calc(50% - 10px);
+  height: 200px; }
+
+.main__block8 {
+  margin-right: 20px; }
+
+footer {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+.footer__row {
+  display: flex;
+  flex-flow: row nowrap; }
+
+.footer__block10,
+.footer__block11,
+.footer__block12,
+.footer__block13 {
+  background-color: #777; }
+
+.footer__block10,
+.footer__block11 {
+  width: 297px;
+  height: 180px;
+  margin-right: 28px; }
+
+.footer__column {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between; }
+
+.footer__block12,
+.footer__block13 {
+  width: 310px;
+  height: 75px; }
