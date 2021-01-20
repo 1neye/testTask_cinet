@@ -9,7 +9,6 @@ for(i=0; i<img.length; i++){
     img[i].addEventListener('click', function(e){
         modal.style.display = 'flex'; 
         modal.firstElementChild.src = this.firstElementChild.src
-        console.log(arrImg.indexOf(this));
         idx.innerHTML = '№ ' + (arrImg.indexOf(this) + 1) 
     });
 }

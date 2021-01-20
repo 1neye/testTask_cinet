@@ -8,6 +8,7 @@ body {
 
 header {
   display: flex;
+  flex-flow: row;
   justify-content: space-between;
   padding-bottom: 19px;
   margin-top: 24px;
@@ -23,13 +24,16 @@ header {
   width: 122px; }
 
 .header__block2 {
-  width: 279px; }
+  width: 100%;
+  max-width: 279px; }
 
 .header__block3 {
-  width: 513px; }
+  width: 100%;
+  max-width: 513px; }
 
 .main {
   display: flex;
+  flex-flow: row nowrap;
   padding-bottom: 25px;
   margin-top: 22px;
   border-bottom: 1px solid #686868; }
@@ -52,7 +56,8 @@ header {
   height: 132px; }
 
 .main__right {
-  width: 766px; }
+  max-width: 766px;
+  width: 100%; }
 
 .main__block5,
 .main__block6,
@@ -61,7 +66,7 @@ header {
   background-color: #dcdcdc; }
 
 .main__block5 {
-  width: calc(100% - 10px);
+  max-width: calc(100% - 10px);
   height: 209px;
   margin-bottom: 20px;
   margin-left: 10px; }
@@ -76,10 +81,13 @@ header {
 
 .main__block6 {
   flex: 0 1 135px;
+  width: 135px;
   height: 153px;
   margin: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
   .main__block6 img {
+    max-width: 500px;
     width: 100%;
     height: 100%;
     object-fit: cover; }
@@ -132,7 +140,8 @@ footer {
 
 .footer__row {
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  width: 100%; }
 
 .footer__block10,
 .footer__block11,
@@ -142,7 +151,8 @@ footer {
 
 .footer__block10,
 .footer__block11 {
-  width: 297px;
+  max-width: 297px;
+  width: 100%;
   height: 180px;
   margin-right: 28px; }
 
@@ -171,3 +181,47 @@ footer {
 
 .footer__block13 {
   background-image: url(../img/html.jpg); }
+
+@media (max-width: 950px) {
+  header {
+    flex-flow: column;
+    align-items: center; }
+  footer {
+    flex-flow: column wrap;
+    align-items: center; }
+  .footer__row {
+    flex-flow: column;
+    align-items: center; }
+  .footer__block10,
+  .footer__block11,
+  .footer__block12,
+  .header__block1,
+  .header__block2,
+  .header__block3,
+  .main__block4,
+  .main__block7,
+  .main__block8 {
+    margin-bottom: 20px; }
+  .footer__block10,
+  .footer__block11,
+  .main__block8 {
+    margin-right: 0px; } }
+
+@media (max-width: 720px) {
+  .main {
+    flex-flow: column;
+    align-items: center; }
+  .main__blocks {
+    flex-flow: column;
+    align-items: center; }
+  .main__left {
+    margin-right: 0; }
+  .main__blocks:last-child {
+    margin-left: 0; }
+  .footer__column,
+  .footer__block12,
+  .footer__block13 {
+    width: 100%; }
+  .main__block5 {
+    max-width: 100%;
+    margin-left: 0; } }
